@@ -1,45 +1,74 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Special Offer for You!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exclusive Offer for U.S. Visitors</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #0a74da, #48b1bf);
-      color: #fff;
-      text-align: center;
       margin: 0;
-      padding: 50px 20px;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #007bff, #00d4ff);
+      color: white;
+      overflow: hidden;
     }
+
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-weight: 700;
+      text-shadow: 0 0 15px rgba(255,255,255,0.4);
+      animation: fadeIn 1.5s ease;
     }
+
     p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease;
+    }
+
+    a.button {
+      display: inline-block;
+      background: white;
+      color: #007bff;
       font-size: 1.2rem;
-      margin-bottom: 40px;
-    }
-    a {
-      background: #fff;
-      color: #0a74da;
-      text-decoration: none;
-      padding: 15px 30px;
-      border-radius: 10px;
       font-weight: bold;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 30px;
       transition: 0.3s;
+      animation: fadeInUp 2.5s ease;
     }
-    a:hover {
-      background: #48b1bf;
-      color: #fff;
+
+    a.button:hover {
+      background: #00d4ff;
+      color: white;
+      box-shadow: 0 0 20px rgba(255,255,255,0.7);
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
-  <h1>Exclusive Offer for U.S. Visitors 🇺🇸</h1>
+  <h1>🎁 Exclusive Offer for U.S. Visitors</h1>
   <p>Click below to claim your bonus now!</p>
-  <a href="https://www.effectivegatecpm.com/p2mz3hn3ng?key=1f78376a9322ccc7657774b1ab37404c" target="_blank">Claim Now</a>
+  <a href="https://www.effectivegatecpm.com/p2mz3hn3ng?key=1f78376a9322ccc7657774b1ab37404c" 
+     class="button" 
+     target="_blank">Claim Bonus</a>
 </body>
 </html>
